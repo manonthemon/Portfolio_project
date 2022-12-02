@@ -21,3 +21,93 @@ h6 {
 p {
   margin: 0;
 }
+
+header {
+  display: flex;
+  padding: 30px;
+ justify-content: space-between;
+ background-color: rgb(122, 133, 238);
+
+}
+
+.hero {
+  display: flex;
+  background-color: rgb(188, 228, 11);
+}
+
+
+.page-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-areas:
+
+"About_header About_text About_text"
+"Work_header Work_1 Work_1"
+"none Work_2 Work_3"
+"none Work_4 Work_5"
+"Contact_header Contact_list Contact_list"
+
+}
+
+
+#About_header {
+
+grid-area: About_header;
+
+background-color: red;
+}
+
+#About_text {
+  grid-area: About_text;
+  background-color: rgb(44, 152, 58);
+}
+
+#Work_header {
+  grid-area: Work_header;
+  background-color: rgb(135, 31, 180);
+}
+
+#Work_1 {
+  grid-area: Work_1;
+
+  background-color: rgb(185, 245, 32);
+}
+
+#Work_2 {
+  grid-area: Work_2;
+
+  background-color: rgb(235, 156, 219);
+}
+
+#Work_3 {
+  grid-area: Work_3;
+
+  background-color: rgb(43, 65, 147);
+}
+
+#Work_4 {
+  grid-area: Work_4;
+
+  background-color: rgb(147, 43, 53);
+}
+
+#Work_5 {
+  grid-area: Work_5;
+
+  background-color: rgb(54, 146, 196);
+}
+
+#Contact_header {
+  grid-area: Contact_header;
+
+  background-color: rgb(34, 191, 120);
+  
+}
+
+#Contact_list {
+  grid-area: Contact_list;
+  
+  background-color: rgb(204, 98, 68);
+
+}

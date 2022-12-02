@@ -25,7 +25,7 @@ Here are the critical requirements necessary to develop a portfolio that satisfi
 
 The following animation shows the web application's appearance and functionality:
 
-![portfolio demo](./images/01-css-challenge-demo.gif)
+![portfolio demo](./01-css-challenge-demo.gif)
 
 Feel free to use your own colors and images.
 

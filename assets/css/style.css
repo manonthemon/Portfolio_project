@@ -1,11 +1,11 @@
 * {
   box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
 }
 
@@ -24,48 +24,80 @@ p {
 
 header {
   display: flex;
-  padding: 30px;
- justify-content: space-between;
- background-color: rgb(122, 133, 238);
+  padding: 10px;
+  padding-left: 0px;
+  justify-content: space-between;
+  background-color: rgb(122, 133, 238);
+}
 
+header h1 {
+  background-color: aqua;
+  padding: 5px 5px 5px 30px
+}
+
+li {
+  display: inline;
+}
+
+li a {
+  padding: 15px;
+  text-decoration: underline;
+  font-weight: 700;
 }
 
 .hero {
   display: flex;
-  background-color: rgb(188, 228, 11);
+  background-image: url(/assets/images/02-hero-bg.jpg);
+  background-size: 2000px;
+  width: 100%;
+  height: auto;
+  padding: 50px;
+  color: white;
+  justify-content: flex-end;
 }
-
 
 .page-wrapper {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 300px 1fr 1fr;
   grid-template-rows: repeat(5, 1fr);
+  gap: 20px;
   grid-template-areas:
 
-"About_header About_text About_text"
-"Work_header Work_1 Work_1"
-"none Work_2 Work_3"
-"none Work_4 Work_5"
-"Contact_header Contact_list Contact_list"
-
+    "About_header About_text About_text"
+    "Work_header Work_1 Work_1"
+    "Work_header  Work_2 Work_3"
+    "Work_header Work_4 Work_5"
+    "Contact_header Contact_list Contact_list"
 }
-
 
 #About_header {
 
-grid-area: About_header;
+  grid-area: About_header;
+  justify-self: flex-end;
+  padding-right: 30px;
+  font-size: 5vh;
+  text-align: right;
+  border-right: solid black 5px;
+  margin-top: 20px;
 
-background-color: red;
+
 }
 
 #About_text {
   grid-area: About_text;
-  background-color: rgb(44, 152, 58);
+  padding: 30px;
 }
 
 #Work_header {
   grid-area: Work_header;
-  background-color: rgb(135, 31, 180);
+  justify-self: flex-end;
+  padding-right: 30px;
+  font-size: 5vh;
+  text-align: right;
+  border-right: solid black 5px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
 }
 
 #Work_1 {
@@ -100,14 +132,19 @@ background-color: red;
 
 #Contact_header {
   grid-area: Contact_header;
+  justify-self: flex-end;
+  padding-right: 30px;
+  font-size: 5vh;
+  text-align: right;
+  border-right: solid black 5px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 
-  background-color: rgb(34, 191, 120);
-  
 }
 
 #Contact_list {
   grid-area: Contact_list;
-  
+
   background-color: rgb(204, 98, 68);
 
 }

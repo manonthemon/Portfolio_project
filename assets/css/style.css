@@ -76,6 +76,7 @@ Nav li a {
   margin-right: 30px;
   margin-bottom: 10px;
   align-self: flex-end;
+  border: dotted;
 
 
 }

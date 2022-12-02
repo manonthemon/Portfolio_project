@@ -91,13 +91,14 @@ margin-right: 30px;
 font-size: 2.3vh;
 }
 
-.page-wrapper {
+.main_container{
   display: grid;
+  justify-content: center;
   grid-template-columns: 300px 1fr 1fr;
   grid-template-rows: 200px 650px 400px 400px 1fr;
-  margin-right: 30px;
+  margin-right: 20px;
   gap: 20px;
-  justify-content: stretch;   
+ 
   grid-template-areas:
 
     "About_header About_text About_text"
@@ -150,7 +151,7 @@ grid-area: Work_1;
 #Work_1 img {
 width: 100%;
 height: 100%;
-border: solid 8px var(--DarkColor);;
+border: solid 8px var(--DarkColor);
 }
 
 #Work_2 {
@@ -161,7 +162,7 @@ grid-area: Work_2;
 #Work_2 img {
 width: 100%;
 height: 100%;
-border: solid 8px var(--DarkColor);;
+border: solid 8px var(--DarkColor);
 
 }
 
@@ -173,7 +174,7 @@ border: solid 8px var(--DarkColor);;
 #Work_3 img {
 width: 100%;
  height: 100%;
- border: solid 8px var(--DarkColor);;
+ border: solid 8px var(--DarkColor);
 }
 
 #Work_4 {
@@ -184,7 +185,7 @@ width: 100%;
 #Work_4 img {
   width: 100%;
    height: 100%;
-   border: solid 8px var(--DarkColor);;
+   border: solid 8px var(--DarkColor);
 }
 
 #Work_5 {
@@ -195,7 +196,7 @@ width: 100%;
 #Work_5 img {
   width: 100%;
    height: 100%;
-   border: solid 8px var(--DarkColor);;
+   border: solid 8px var(--DarkColor);
 }
 
 #Contact_header {
@@ -203,7 +204,7 @@ width: 100%;
   padding: 30px;
   font-size: 5vh;
   text-align: right;
-  border-right: solid var(---DarkColor);
+  border-right: solid var(--DarkColor);
 
 }
 
@@ -214,6 +215,7 @@ display: flex;
 justify-content: space-around;
 align-items: flex-end;
 padding-bottom: 25px;
+
 }
 
 #Contact_list a {
@@ -221,5 +223,4 @@ font-weight: 700;
 font-size: 2.5vh;
 color: var(---DarkColor);
 text-decoration: none;
-}
 }

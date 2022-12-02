@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+
 }
 
 body {
@@ -39,7 +40,7 @@ li {
   display: inline;
 }
 
-li a {
+Nav li a {
   padding: 15px;
   text-decoration: underline;
   font-weight: 700;
@@ -59,8 +60,10 @@ li a {
 .page-wrapper {
   display: grid;
   grid-template-columns: 300px 1fr 1fr;
-  grid-template-rows: repeat(5, 1fr);
+  grid-template-rows: 200px 650px 400px 400px 1fr;
+  margin-right: 30px;
   gap: 20px;
+  justify-content: stretch;   
   grid-template-areas:
 
     "About_header About_text About_text"
@@ -79,8 +82,6 @@ li a {
   text-align: right;
   border-right: solid black 5px;
   margin-top: 20px;
-
-
 }
 
 #About_text {
@@ -101,33 +102,57 @@ li a {
 }
 
 #Work_1 {
-  grid-area: Work_1;
+grid-area: Work_1;
+border: solid 10px;
 
-  background-color: rgb(185, 245, 32);
+
+}
+
+#Work_1 img {
+width: 100%;
+height: 100%;
 }
 
 #Work_2 {
-  grid-area: Work_2;
+grid-area: Work_2;
+border: solid 10px;
 
-  background-color: rgb(235, 156, 219);
+}
+
+#Work_2 img {
+width: 100%;
+height: 100%;
+
 }
 
 #Work_3 {
   grid-area: Work_3;
+  border: solid 10px;
+}
 
-  background-color: rgb(43, 65, 147);
+#Work_3 img {
+width: 100%;
+ height: 100%;
 }
 
 #Work_4 {
   grid-area: Work_4;
+  border: solid 10px;
+}
 
-  background-color: rgb(147, 43, 53);
+#Work_4 img {
+  width: 100%;
+   height: 100%;
 }
 
 #Work_5 {
   grid-area: Work_5;
+  border: solid 10px;
+}
 
-  background-color: rgb(54, 146, 196);
+#Work_5 img {
+  width: 100%;
+   height: 100%;
 }
 
 #Contact_header {

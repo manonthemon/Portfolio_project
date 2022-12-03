@@ -153,6 +153,33 @@ font-size: 2.8vh;
 
 }
 
+#Big_label {
+  background: var(--DarkColor);
+  width: 15%;
+  height: 15%;
+  padding: 20px 40px; 
+  color: white;
+  position: relative;
+  top: -150px;
+  font-weight: 600;
+  font-size: 2.0vh;
+
+}
+
+
+.Labels {
+  background: var(--DarkColor);
+  width: 30%;
+  height: 25%;
+  padding: 20px 40px; 
+  color: white;
+  position: relative;
+  top: -150px;
+  font-weight: 600;
+  font-size: 2.0vh;
+
+}
+
 #Work_1 {
 grid-area: Work_1;
 }
@@ -246,6 +273,6 @@ padding-bottom: 25px;
 #Contact_list a {
 font-weight: 700;
 font-size: 2.5vh;
-color: var(---DarkColor);
+color: var(--DarkColor);
 text-decoration: none;
 }

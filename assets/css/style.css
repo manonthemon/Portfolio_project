@@ -1,6 +1,7 @@
 :root {
   --LightColor: rgb(229,229,229);
   --DarkColor: rgb(67, 94, 63);
+  --TransparentColor: rgba(67, 94, 63, 0.8);
 }
 
 * {
@@ -13,6 +14,9 @@
 
 li:hover {
   text-decoration: underline;
+  transform: scale(1.2); 
+  transition: transform .2s;
+
 }
 
 body {
@@ -34,8 +38,6 @@ p {
   margin: 0;
   font-size: 3vh;;
 }
-
-
 
 header {
   display: flex;
@@ -63,7 +65,6 @@ Nav li a {
   font-weight: 700;
   color: var(--DarkColor);
   text-decoration: none;
-
 }
 
 .hero {
@@ -74,7 +75,6 @@ Nav li a {
   background-size: 2500px;
   width: 100%;
   height: auto;
-
 }
 
 .hero img {
@@ -86,8 +86,6 @@ Nav li a {
   align-self: flex-end;
   border: solid 2px;
   object-fit: cover;
-
-
 }
 
 .hero h2 {
@@ -103,8 +101,8 @@ font-size: 2.8vh;
 .main_container{
   display: grid;
   justify-content: center;
-  grid-template-columns: 300px 1fr 1fr;
-  grid-template-rows: 200px 650px 400px 400px 1fr;
+  grid-template-columns: 300px 680px 680px;
+  grid-template-rows: 200px 650px 350px 350px 1fr;
   margin-right: 20px;
   gap: 20px;
  
@@ -141,6 +139,15 @@ font-size: 2.8vh;
   font-style: italic;
 }
 
+.Brightness {
+background-color: var(--DarkColor);
+display: inline-block;
+}
+
+.Brightness img:hover {
+    opacity: .5;
+    }
+ 
 #Work_header {
   grid-area: Work_header;
   justify-self: flex-end;
@@ -150,34 +157,38 @@ font-size: 2.8vh;
   border-right: solid 4px var(--DarkColor);
   margin-top: 20px;
   margin-bottom: 20px;
-
 }
 
 #Big_label {
-  background: var(--DarkColor);
+  background: var(--TransparentColor);
   width: 15%;
   height: 15%;
   padding: 20px 40px; 
   color: var(--LightColor);
   position: relative;
   top: -150px;
-  font-weight: 600;
+  font-weight: 900;
   font-size: 2.0vh;
-
 }
 
-
 .Labels {
-  background: var(--DarkColor);
-  width: 30%;
+  background: var(--TransparentColor);
+  width: 32%;
   height: 25%;
-  padding: 20px 40px; 
+  padding: 30px; 
   color: var(--LightColor);
   position: relative;
   top: -150px;
-  font-weight: 600;
+  font-weight: 900;
   font-size: 2.0vh;
+}
 
+.Labels_small {
+  background: transparent;
+  color: var(--LighColor);
+  font-size: 1.5vh;
+  text-align:justify;
+  font-weight: 500;
 }
 
 #Work_1 {
@@ -193,7 +204,6 @@ object-fit: cover;
 
 #Work_2 {
 grid-area: Work_2;
-
 }
 
 #Work_2 img {
@@ -201,12 +211,10 @@ width: 100%;
 height: 100%;
 border: solid 6px var(--DarkColor);
 object-fit: cover;
-
 }
 
 #Work_3 {
   grid-area: Work_3;
-
 }
 
 #Work_3 img {
@@ -218,7 +226,6 @@ width: 100%;
 
 #Work_4 {
   grid-area: Work_4;
-
 }
 
 #Work_4 img {
@@ -230,7 +237,6 @@ width: 100%;
 
 #Work_5 {
   grid-area: Work_5;
-
 }
 
 #Work_5 img {
@@ -239,7 +245,6 @@ width: 100%;
    border: solid 6px var(--DarkColor);
    object-fit: cover;
 }
-
 
 footer {
   display: grid;
@@ -257,7 +262,6 @@ footer {
   font-size: 5vh;
   text-align: right;
   border-right: solid 4px var(--DarkColor);
-
 }
 
 #Contact_list {
@@ -267,7 +271,6 @@ display: flex;
 justify-content: space-around;
 align-items: flex-end;
 padding-bottom: 25px;
-
 }
 
 #Contact_list a {

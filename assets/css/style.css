@@ -323,6 +323,14 @@ p {
   justify-content: center;
 }
 
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+ 
+}
+
 #Contact_header {
   font-size: 5vh;
   text-align:center;
@@ -333,22 +341,15 @@ p {
   display: flex;
   flex-direction: column;
   margin: 20px;
-  justify-items: center;
-  justify-content: center;
-
   }
   
   #Contact_list a {
-  display: flex;
-  flex-direction: column;
-  justify-items: center;
-  justify-content: center;  
+ 
   font-weight: 700;
   font-size: 2vh;
   color: var(--DarkColor);
-  text-decoration: none; 
   margin: 20px;
-
+ 
 }
 
 

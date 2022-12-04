@@ -112,7 +112,7 @@ font-size: 2.8vh;
   display: grid;
   justify-content: center;
   grid-template-columns: 300px 680px 680px;
-  grid-template-rows: 200px 650px 350px 350px 1fr;
+  grid-template-rows: 200px 650px 350px 350px;
   margin-right: 20px;
   gap: 20px;
   grid-template-areas:
@@ -121,14 +121,13 @@ font-size: 2.8vh;
     "Work_header Work_1 Work_1"
     "Work_header  Work_2 Work_3"
     "Work_header Work_4 Work_5"
-    "Contact_header Contact_list Contact_list"
+ 
 }
 
 /*About me section styles */
 
 #About_header {
   grid-area: About_header;
-  justify-self: flex-end;
   padding-right: 30px;
   font-size: 5vh;
   text-align: right;
@@ -153,7 +152,6 @@ font-size: 2.8vh;
 
 #Work_header {
   grid-area: Work_header;
-  justify-self: flex-end;
   padding-right: 30px;
   font-size: 5vh;
   text-align: right;
@@ -219,29 +217,33 @@ grid-area: Work_2;
 /*Footer styles */
 
 footer {
-  display:grid;
-  grid-template-columns: 295px 1fr;
-  margin-bottom: 20px;
-  grid-template-areas:
-
-  "Contact_header Contact_list Contact_list"
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 300px 1360px;
+  margin-right: 20px;
+  gap: 20px;
+  grid-template-areas: 
+  
+"Content_header Contact_list Contact_list";
 }
 
 #Contact_header {
-  grid-area: Contact_header;
-  padding: 30px;
+  grid-area: Content_header;
+  padding: 50px;
   font-size: 5vh;
   text-align: right;
   border-right: solid 4px var(--DarkColor);
+  margin-top: 20px;
 }
+
 
 #Contact_list {
 grid-area: Contact_list;
 background-color: var(--LightColor);
 display: flex;
 justify-content: space-around;
-align-items: flex-end;
-padding-bottom: 25px;
+padding: 70px;
+
 }
 
 #Contact_list a {
@@ -251,6 +253,7 @@ color: var(--DarkColor);
 text-decoration: none;
 }
 
+/*Media queries */
 
 @media only screen and (max-width: 600px) {
 
@@ -260,7 +263,7 @@ nav {
 
   header {
   position: static;
-  margin-left:20px;
+  margin:20px;
   padding: 30px;
 }
 
@@ -268,23 +271,25 @@ nav {
   display: flex;
   flex-direction: column;
   background-image: url(../images/pattern1.jpg);
-  background-size: 900px;
+  background-size: 1200px;
 }
 
 .hero img {
   width: 250px;
   align-self: center;
-  margin-left: 70px;
   object-fit: cover;
+  margin: 15px 0px 10px 0px;
 }
 
 .hero h2 {
-  margin-right: 90px;
+ align-self: center;
+ margin: 0px;
+ margin-bottom: 10px;
 }
 
 #About_header {
 
-  padding: 20px;
+  padding: 30px;
   font-size: 6vh;
   text-align:center;
   border: none;
@@ -297,7 +302,7 @@ p {
 
 #Work_header {
   margin-top: -35px;
-  padding: 20px;
+  padding: 30px;
   font-size: 6vh;
   text-align:center;
   border: none;
@@ -342,28 +347,27 @@ footer {
 }
 
 #Contact_header {
-  padding: 20px;
   font-size: 6vh;
   text-align:center;
   border: none;
+  padding: 30px;
 }
 
 footer ul {
-  display: flex;
+
   flex-direction: column;
-  margin-left: 45px;
+  margin-top: -35px;
+  padding: 30px;
 }
 
 footer ul li {
   align-self: center;
-  margin-right: 90px;
   margin-bottom: 15px;
-  font-size: larger;
-  text-decoration: underline;
 }
 
 #Contact_list a {
   font-size: 3.5vh;
+  text-decoration: underline;
   }
 
 }

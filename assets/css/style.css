@@ -1,8 +1,13 @@
+
+/*Variables*/
+
 :root {
   --LightColor: rgb(229,229,229);
   --DarkColor: rgb(67, 94, 63);
   --TransparentColor: rgba(67, 94, 63, 0.8);
 }
+
+/*CSS reset*/
 
 * {
   box-sizing: border-box;
@@ -32,6 +37,8 @@ p {
   font-size: 3vh;;
 }
 
+/*Header style */
+
 header {
   display: flex;
   padding: 15px;
@@ -42,17 +49,15 @@ header {
 }
 
 header h1 {
-  padding: 5px 5px 5px 30px;
+  padding: 5px 20px 5px 30px;
   color: var(--LightColor);
-  background-color: var(--DarkColor)
-  
+  background-color: var(--DarkColor);
 }
 
-/*Links' lists styles */
+/*Links lists styles */
 
 li {
   display: inline;
-
 }
 
 Nav li a {
@@ -66,7 +71,6 @@ li:hover {
   text-decoration: underline;
   transform: scale(1.2); 
   transition: transform .2s;
-
 }
 
 /*Top banner styles */
@@ -76,7 +80,7 @@ li:hover {
   flex-direction: column;
   flex-wrap: wrap;
   background-image: url(../images/pattern1.jpg);
-  background-size: 2500px;
+  background-size: 2400px;
   width: 100%;
   height: auto;
 }
@@ -85,11 +89,11 @@ li:hover {
   width: 12%;
   height: 18%;
   margin-top: 30px;
-  margin-right: 55px;
+  margin-right: 40px;
   margin-bottom: 10px;
   align-self: flex-end;
-  border: solid 2px;
   object-fit: cover;
+  border-radius: 1.5%;
 }
 
 .hero h2 {
@@ -111,7 +115,6 @@ font-size: 2.8vh;
   grid-template-rows: 200px 650px 350px 350px 1fr;
   margin-right: 20px;
   gap: 20px;
- 
   grid-template-areas:
 
     "About_header About_text About_text"
@@ -124,7 +127,6 @@ font-size: 2.8vh;
 /*About me section styles */
 
 #About_header {
-
   grid-area: About_header;
   justify-self: flex-end;
   padding-right: 30px;
@@ -165,7 +167,6 @@ width: 100%;
 height: 100%;
 border: solid 6px var(--DarkColor);
 object-fit: cover;
-
 }
 
 .Work_image img:hover {
@@ -261,7 +262,6 @@ nav {
   position: static;
   margin-left:20px;
   padding: 30px;
-
 }
 
 .hero {
@@ -274,13 +274,12 @@ nav {
 .hero img {
   width: 250px;
   align-self: center;
-  border: solid 2px;
   margin-left: 70px;
   object-fit: cover;
 }
 
 .hero h2 {
-  margin-right: 53px;
+  margin-right: 90px;
 }
 
 #About_header {
@@ -289,7 +288,6 @@ nav {
   font-size: 6vh;
   text-align:center;
   border: none;
- 
 }
 
 p {
@@ -297,15 +295,12 @@ p {
   font-size: 3vh;;
 }
 
-
 #Work_header {
-
   margin-top: -35px;
   padding: 20px;
   font-size: 6vh;
   text-align:center;
   border: none;
-
 }
 
 .main_container {
@@ -314,7 +309,6 @@ p {
   justify-items: center;
   justify-content: center;
   margin-left: 20px;
-
 }
 
 .Labels {
@@ -345,7 +339,6 @@ p {
 footer {
   display: flex;
   flex-direction: column;
-  margin-top: 20px;
 }
 
 #Contact_header {

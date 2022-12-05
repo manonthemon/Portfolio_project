@@ -132,9 +132,9 @@ font-size: 2.8vh;
 
 #About_text {
 grid-area: About_text;
-font-size: 3vh;
+font-size: 2.6vh;
 margin-top: 5px;
-padding: 30px;
+padding: 40px;
 
 }
 
@@ -162,7 +162,7 @@ padding: 30px;
   margin-top: 20px;
 width: 100%;
 height: 100%;
-border: solid 6px var(--DarkColor);
+border: solid 5px var(--DarkColor);
 object-fit: cover;
 }
 

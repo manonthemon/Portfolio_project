@@ -115,7 +115,6 @@ li:hover {
     "Work_header Work_1 Work_1"
     "Work_header  Work_2 Work_3"
     "Work_header Work_4 Work_5"
-
 }
 
 /*About me section styles */
@@ -134,7 +133,6 @@ li:hover {
   font-size: 2.6vh;
   margin-top: 5px;
   padding: 40px;
-
 }
 
 .Bold_font {
@@ -154,7 +152,6 @@ li:hover {
   text-align: right;
   border-right: solid 4px var(--DarkColor);
   margin-top: 20px;
-
 }
 
 .Work_image img {
@@ -191,7 +188,6 @@ li:hover {
 
 /*Lables on content photos styles */
 
-
 .Labels {
   background: var(--TransparentColor);
   width: 23vh;
@@ -223,8 +219,7 @@ footer {
   margin-top: 30px;
   grid-template-areas:
 
-
-    "Content_header Contact_list Contact_list";
+  "Content_header Contact_list Contact_list";
 }
 
 #Contact_header {
@@ -235,7 +230,6 @@ footer {
   border-right: solid 4px var(--DarkColor);
   margin-top: 20px;
 }
-
 
 #Contact_list {
   grid-area: Contact_list;
@@ -294,7 +288,6 @@ footer {
 }
 
 #About_header {
-
   padding: 20px;
   margin: 20px 0px 0px 0px;
   font-size: 4vh;
@@ -323,7 +316,6 @@ footer {
   justify-content: center;
   margin: 0px 50px 0px 50px;
   gap: 20px;
-
 }
 
 .Labels {
@@ -384,7 +376,6 @@ footer {
 }
 
 /*Styles for phones */
-
       
 @media only screen and (max-width: 480px) {
 
@@ -432,7 +423,6 @@ footer {
     font-size: 2.5vh;;
   }
   
-  
   #Work_header {
     margin: 20px, 0px 0px 0px;
     padding: 0px 30px 20px 30px;
@@ -449,7 +439,6 @@ footer {
     justify-content: center;
     margin-left: 50px;
     gap: 20px;
-  
   }
   
   .Labels {
@@ -463,7 +452,6 @@ footer {
     font-weight: 900;
     font-size: 2.0vh;
   }
-  
   
   .Labels_small_text {
     background: transparent;
@@ -492,7 +480,6 @@ footer {
     text-align:center;
     border: none;
   }
-
   
   #Contact_list {
     display: flex;

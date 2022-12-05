@@ -3,17 +3,14 @@
 
 ## Description
 
-<br>
 
 I've completed this project to implement skills acquired during the second week of EDX front-end development bootcamp. I was tasked with creating a fully responsive portfolio page, matching the general layout and functionality of the example below:
 
-<br>
 
 ![Horiseon home page screenshot](/01-css-challenge-demo.gif)
 
 Creating this portfolio page allowed me to:
 
-<br>
 
  <li>Practice writing HTML and CSS code.</li>
  <li>Practice using CSS Flexbox and CSS Grid to create attractive website layouts</li>
@@ -23,14 +20,10 @@ Creating this portfolio page allowed me to:
 <li>Better comprehend the relation between HTML and CSS.</li>
 
 
-<br>
-
 #
-
 
 ## Installation
 
-<br>
 
 No installation is required. The deployed website can be seen at https://manonthemon.github.io/Portfolio_project/. The edited HTML, CSS and other files are visible in the repository. 
 
@@ -38,11 +31,9 @@ No installation is required. The deployed website can be seen at https://manonth
 
 ## Usage
 
-<br>
 
 This project can serve those wiling to learn more about:
 
-<br>
 
 
 <li>CSS Flexbox</li>
@@ -55,5 +46,4 @@ This project can serve those wiling to learn more about:
 
 <li>Semantic HTML and accessible web design</li>
 
-<br>
 the page also serves as the beginning of my portfolio, presenting some of my projects.

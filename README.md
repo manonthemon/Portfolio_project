@@ -20,14 +20,12 @@ Creating this portfolio page allowed me to:
 <li>Better comprehend the relation between HTML and CSS.</li>
 
 
-#
 
 ## Installation
 
 
 No installation is required. The deployed website can be seen at https://manonthemon.github.io/Portfolio_project/. The edited HTML, CSS and other files are visible in the repository. 
 
-#
 
 ## Usage
 

@@ -1,4 +1,4 @@
-/*Variables*/
+/*CSS Variables*/
 
 :root {
   --LightColor: rgb(229, 229, 229);
@@ -31,7 +31,7 @@ h6 {
   margin: 0;
 }
 
-/*Header style */
+/*Header style*/
 
 header {
   display: flex;
@@ -117,15 +117,20 @@ li:hover {
     "Work_header Work_4 Work_5"
 }
 
-/*About me section styles */
+/*Section headers style */
 
-#About_header {
-  grid-area: About_header;
+h3 {
   padding-right: 30px;
   font-size: 5vh;
   text-align: right;
   border-right: solid 4px var(--DarkColor);
   margin-top: 20px;
+}
+
+/*About me section styles */
+
+#About_header {
+  grid-area: About_header;
 }
 
 #About_text {
@@ -145,13 +150,9 @@ li:hover {
 
 /*Work section styles */
 
+
 #Work_header {
   grid-area: Work_header;
-  padding-right: 30px;
-  font-size: 5vh;
-  text-align: right;
-  border-right: solid 4px var(--DarkColor);
-  margin-top: 20px;
 }
 
 .Work_image img {
@@ -186,7 +187,7 @@ li:hover {
   grid-area: Work_5;
 }
 
-/*Lables on content photos styles */
+/*Lables on work section photos styles*/
 
 .Labels {
   background: var(--TransparentColor);
@@ -224,12 +225,8 @@ footer {
 
 #Contact_header {
   grid-area: Content_header;
-  padding: 50px;
-  font-size: 5vh;
-  text-align: right;
-  border-right: solid 4px var(--DarkColor);
-  margin-top: 20px;
 }
+
 
 #Contact_list {
   grid-area: Contact_list;
@@ -248,9 +245,9 @@ footer {
   text-decoration: none;
 }
 
-/*Media queries */
+/*Media queries*/
 
-/*Styles for tablets */
+/*Styles for tablets*/
 
 @media only screen and (max-width: 1200px) {
 
@@ -437,26 +434,25 @@ footer {
     flex-direction: column;
     justify-items: center;
     justify-content: center;
-    margin-left: 50px;
+    margin: 0px 30px 20px 30px;
     gap: 20px;
   }
   
   .Labels {
     background: var(--TransparentColor);
-    width: 55%;
-    height: 12vh;
-    padding: 35px; 
+    width: 50%;
+    padding: 35px 20px; 
     color: var(--LightColor);
     position: relative;
     top: -115px;
     font-weight: 900;
-    font-size: 2.0vh;
+    font-size: 1.7vh;
   }
   
   .Labels_small_text {
     background: transparent;
     color: var(--LightColor);
-    font-size: 1.5vh;
+    font-size: 1.1vh;
     text-align:justify;
     font-weight: 500;
   }
@@ -474,8 +470,8 @@ footer {
   #Contact_header {
     display: flex;
     flex-direction: column;
-    padding: 40px 30px 20px 30px;
-    margin: 20px 0px 0px 0px;
+    padding: 60px 30px 20px 30px;
+    margin: 0px;
     font-size: 5vh;
     text-align:center;
     border: none;
